@@ -1,8 +1,9 @@
 # Decisio
 
-Decisio is a web-based decision intelligence platform designed to help software teams capture, track, and continuously re-evaluate critical engineering decisions throughout the software lifecycle. The platform focuses on preserving the context, assumptions, and rationale behind decisions such as architecture choices, technology selection, and development processes, and identifying when those decisions may no longer align with current project realities.
 
 ## Project Overview
+Decisio is a web-based decision intelligence platform designed to help software teams capture, track, and continuously re-evaluate critical engineering decisions throughout the software lifecycle. The platform focuses on preserving the context, assumptions, and rationale behind decisions such as architecture choices, technology selection, and development processes, and identifying when those decisions may no longer align with current project realities.
+
 ## Problem It Solves
 
 In software projects, many critical engineering decisions are made early based on assumptions about team size, system scale, timelines, and constraints. As projects evolve, these assumptions often change, but the decisions themselves are rarely revisited. Over time, teams forget why certain choices were made and continue to operate under outdated decisions, leading to architectural mismatches, increased maintenance effort, and costly rework.
