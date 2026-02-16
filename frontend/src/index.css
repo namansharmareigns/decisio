@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-slate-100;
+    background:
+      radial-gradient(1000px circle at 10% 10%, rgba(34, 211, 238, 0.14), transparent 35%),
+      radial-gradient(900px circle at 90% 20%, rgba(139, 92, 246, 0.14), transparent 40%),
+      radial-gradient(800px circle at 30% 90%, rgba(16, 185, 129, 0.10), transparent 45%),
+      linear-gradient(180deg, rgb(2, 6, 23) 0%, rgb(3, 7, 18) 100%);
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-xl font-semibold transition-all duration-200 border border-white/10;
+  }
+  
+  .btn-primary {
+    @apply text-slate-950;
+    background: linear-gradient(135deg, rgba(34,211,238,1) 0%, rgba(139,92,246,1) 100%);
+    box-shadow: 0 10px 30px rgba(34,211,238,0.18), 0 10px 30px rgba(139,92,246,0.12);
+  }
+
+  .btn-primary:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+  }
+  
+  .btn-secondary {
+    @apply bg-white/5 text-slate-100 hover:bg-white/10;
+  }
+  
+  .btn-danger {
+    @apply bg-red-500/90 text-white hover:bg-red-500;
+  }
+  
+  .card {
+    @apply rounded-2xl p-6 border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_10px_60px_rgba(0,0,0,0.35)];
+  }
+  
+  .input {
+    @apply w-full px-4 py-2 rounded-xl bg-black/20 border border-white/10 text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-400/60 focus:border-transparent;
+  }
+  
+  .label {
+    @apply block text-sm font-semibold text-slate-200 mb-2;
+  }
+}
