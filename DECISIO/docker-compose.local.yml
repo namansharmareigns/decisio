@@ -1,0 +1,13 @@
+services:
+  postgres:
+    ports:
+      - "5433:5432"
+
+  backend:
+    ports:
+      - "8001:8000"
+
+  frontend:
+    ports:
+      - "3001:80"
+
